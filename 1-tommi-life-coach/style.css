@@ -1,0 +1,44 @@
+img {
+  width: 500px;
+}
+
+body {
+  display: flex;
+  gap: 128px;
+  background-color: black;
+  color: silver;
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+}
+
+button {
+  font-size: 22px;
+}
+
+#quote-container {
+  background-color: rgb(255, 255, 255, 0.05);
+  height: min-content;
+  margin-top: 200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1360px) {
+  body {
+    flex-flow: column nowrap;
+    gap: 0px;
+    align-items: center;
+  }
+  #quote-container {
+    margin-top: 0px;
+  }
+}
