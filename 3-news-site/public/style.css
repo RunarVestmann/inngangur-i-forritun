@@ -1,0 +1,43 @@
+#news {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.news-item {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 200px;
+  margin-top: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 16px;
+}
+
+form * {
+  width: 400px;
+}
+
+.news-item-delete-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news-item-delete-button button {
+  width: 100px;
+  background-color: red;
+  color: white;
+}

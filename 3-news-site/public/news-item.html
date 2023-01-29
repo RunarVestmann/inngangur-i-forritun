@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fréttavefur</title>
+  </head>
+  <body>
+    <form>
+      <div class="news-item-delete-button">
+        <button type="button" onclick="deleteNewsItem()">Eyða frétt</button>
+      </div>
+      <label for="title">Titill</label>
+      <input id="title" name="title" type="text" />
+
+      <label for="content">Efni</label>
+      <textarea id="content" name="content"></textarea>
+
+      <button onclick="submitChanges(event)" type="submit">
+        Vista breytingar
+      </button>
+    </form>
+    <script src="news-item.js"></script>
+  </body>
+</html>
