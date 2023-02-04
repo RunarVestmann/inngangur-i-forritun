@@ -3,9 +3,26 @@ const app = express();
 
 const port = 3000;
 
-const news = [{ id: 1, title: "TEST", content: "test", date: new Date() }];
+const news = [
+  {
+    id: 1,
+    title: "TEST frétt númer 1",
+    content: `Lorem ipsum dolor sit amet. Ab tenetur sunt ut neque voluptatibus non repellendus ipsum ut galisum natus est suscipit totam eos voluptatem consequatur. In maxime assumenda in omnis rerum ea impedit vero ex consequatur nobis qui itaque alias ea dolor sunt. Vel voluptas laudantium ab sapiente itaque est pariatur ratione ea nemo atque et aliquam beatae?
+    Qui aperiam soluta et laborum ullam ut quos facilis qui voluptatem molestiae. Et maxime quam aut temporibus amet aut quae recusandae.
+    Id ullam galisum quo totam sint qui inventore quam. Et ipsam expedita quo obcaecati velit et ratione exercitationem ab odit eligendi. Sed expedita dolorem est deleniti atque aut temporibus minus. Lorem ipsum dolor sit amet. Ab tenetur sunt ut neque voluptatibus non repellendus ipsum ut galisum natus est suscipit totam eos voluptatem consequatur. In maxime assumenda in omnis rerum ea impedit vero ex consequatur nobis qui itaque alias ea dolor sunt. Vel voluptas laudantium ab sapiente itaque est pariatur ratione ea nemo atque et aliquam beatae?
+    Qui aperiam soluta et laborum ullam ut quos facilis qui voluptatem molestiae. Et maxime quam aut temporibus amet aut quae recusandae.
+    Id ullam galisum quo totam sint qui inventore quam. Et ipsam expedita quo obcaecati velit et ratione exercitationem ab odit eligendi. Sed expedita dolorem est deleniti atque aut temporibus minus. Lorem ipsum dolor sit amet. Ab tenetur sunt ut neque voluptatibus non repellendus ipsum ut galisum natus est suscipit totam eos voluptatem consequatur. In maxime assumenda in omnis rerum ea impedit vero ex consequatur nobis qui itaque alias ea dolor sunt. Vel voluptas laudantium ab sapiente itaque est pariatur ratione ea nemo atque et aliquam beatae?
+    Qui aperiam soluta et laborum ullam ut quos facilis qui voluptatem molestiae. Et maxime quam aut temporibus amet aut quae recusandae.
+    Id ullam galisum quo totam sint qui inventore quam. Et ipsam expedita quo obcaecati velit et ratione exercitationem ab odit eligendi. Sed expedita dolorem est deleniti atque aut temporibus minus. Lorem ipsum dolor sit amet. Ab tenetur sunt ut neque voluptatibus non repellendus ipsum ut galisum natus est suscipit totam eos voluptatem consequatur. In maxime assumenda in omnis rerum ea impedit vero ex consequatur nobis qui itaque alias ea dolor sunt. Vel voluptas laudantium ab sapiente itaque est pariatur ratione ea nemo atque et aliquam beatae?
+    Qui aperiam soluta et laborum ullam ut quos facilis qui voluptatem molestiae. Et maxime quam aut temporibus amet aut quae recusandae.
+    Id ullam galisum quo totam sint qui inventore quam. Et ipsam expedita quo obcaecati velit et ratione exercitationem ab odit eligendi. Sed expedita dolorem est deleniti atque aut temporibus minus. Lorem ipsum dolor sit amet. Ab tenetur sunt ut neque voluptatibus non repellendus ipsum ut galisum natus est suscipit totam eos voluptatem consequatur. In maxime assumenda in omnis rerum ea impedit vero ex consequatur nobis qui itaque alias ea dolor sunt. Vel voluptas laudantium ab sapiente itaque est pariatur ratione ea nemo atque et aliquam beatae?
+    Qui aperiam soluta et laborum ullam ut quos facilis qui voluptatem molestiae. Et maxime quam aut temporibus amet aut quae recusandae.
+    Id ullam galisum quo totam sint qui inventore quam. Et ipsam expedita quo obcaecati velit et ratione exercitationem ab odit eligendi. Sed expedita dolorem est deleniti atque aut temporibus minus. Lorem ipsum dolor sit amet. Ab tenetur sunt ut neque voluptatibus non repellendus ipsum ut galisum natus est suscipit totam eos voluptatem consequatur. In maxime assumenda in omnis rerum ea impedit vero ex consequatur nobis qui itaque alias ea dolor sunt. Vel voluptas laudantium ab sapiente itaque est pariatur ratione ea nemo atque et aliquam beatae?`,
+    date: new Date(),
+  },
+];
 
-let counter = 1;
+let counter = news.length + 1;
 
 app.use(express.static("public"));
 app.use(express.json());

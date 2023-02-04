@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #news {
   display: flex;
   flex-flow: column;
@@ -8,16 +14,23 @@
   padding: 8px;
   border: 1px solid black;
   border-radius: 8px;
-  width: 200px;
+  width: 920px;
+  max-width: 90%;
   margin-top: 16px;
-  text-align: center;
-  text-decoration: none;
   color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.news-item small {
+  align-self: flex-end;
 }
 
 .button {
   display: flex;
   justify-content: center;
+  margin-top: 16px;
 }
 
 form {
@@ -31,13 +44,25 @@ form * {
   width: 400px;
 }
 
-.news-item-delete-button {
+.form-top-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.form-top-row button {
+  width: 100px;
+  background-color: red;
+  color: white;
+}
+
+.see-more-button {
   display: flex;
   justify-content: flex-end;
 }
 
-.news-item-delete-button button {
-  width: 100px;
-  background-color: red;
-  color: white;
+button {
+  padding: 4px;
+  cursor: pointer;
 }

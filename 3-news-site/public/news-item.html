@@ -9,14 +9,15 @@
   </head>
   <body>
     <form>
-      <div class="news-item-delete-button">
+      <div class="form-top-row">
+        <a href="/">Til baka</a>
         <button type="button" onclick="deleteNewsItem()">Eyða frétt</button>
       </div>
       <label for="title">Titill</label>
       <input id="title" name="title" type="text" />
 
       <label for="content">Efni</label>
-      <textarea id="content" name="content"></textarea>
+      <textarea rows="25" cols="50" id="content" name="content"></textarea>
 
       <button onclick="submitChanges(event)" type="submit">
         Vista breytingar
